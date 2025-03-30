@@ -249,6 +249,75 @@ header{
     transition:0.5s;
 }
 
+.card h1{
+    position:absolute;
+    margin: 0;
+    top:10px;
+    left:5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    z-index: 1;
+    background:linear-gradient(to right,#4acfee,#52f8c9,#02d79a,#6070fd,#2a46fd,#0099ff,#4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation:animate-gradient 2.5s linear infinite;
+    max-width: 250px;
+}
+
+.card p{
+    position:absolute;
+    top:80px;
+    left:5%;
+    z-index:1;
+    max-width:250px;
+    color:rgb(237, 206, 236);
+}
+
+.card video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card button{
+    position:absolute;
+    bottom:5%;
+    left:5%;
+    padding:10px 25px;
+    border:1px solid gray;
+    background-color: #0f1217;
+    color:gray;
+    border-radius: 20px;
+    box-shadow:0 0 5px lightgray;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    box-shadow:0 0 15px lightgray;
+    opacity:0.7;
+}
+
+
+.card:hover{
+    box-shadow:0 0 15px rgb(211,211,211);
+}
+
+.card:nth-child(1){
+    grid-column:span 2;
+}
+
+.card:nth-child(2){
+    grid-row:span 2;
+    height:83vh;
+}
+
+.contact-section{
+    
+}
+
 
 
 
