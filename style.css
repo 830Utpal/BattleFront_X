@@ -413,6 +413,12 @@ header{
     margin:0 10px;
 }
 
+.stones-img{
+    position: absolute;
+    margin-top: 22%;
+    width:500px;
+}
+
 .autoBlur{
     animation: autoBlurAnimation linear both;
     animation-timeline: view();
@@ -511,9 +517,31 @@ header{
         right:0;
         top:20px;
     }
-    .contact-section ,img2{
+    .contact-section .img2{
         top:30px;
         left:-40px;
+        width:180px;
+        height:180px;
+    }
+    .contact-section .img3{
+        left:-40px;
+        bottom:0;
+        width:150px;
+        height:180px;
+    }
+    .contact-section h1{
+        font-size: 60px;
+        max-width:300px;
+    }
+    .footer p{
+        display:none;
+    }
+    .footer ul{
+        margin-left: 70px;
+    }
+    .stones-img{
+        margin-top:80%;
+        width:400px;
     }
 }
 
