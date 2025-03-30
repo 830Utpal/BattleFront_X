@@ -461,20 +461,24 @@ header{
 }
 
 /*auto dispplay*/
-.autoDisplay{
-    animation:autoDisplayAnimation both;
-    animation-timeline:view(70% 5%);
+.autoDisplay {
+    animation: autoDisplayAnimation ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 5%;
+    animation-composition: accumulate;
 }
 
-@keyframes autoDisplayAnimation{
-    from{
-        opacity:0;
+@keyframes autoDisplayAnimation {
+    from {
+        opacity: 0;
         transform: translateY(200px) scale(0.3);
-    }to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
 }
+
 
 @media screen and (max-width:650px){
     header{
