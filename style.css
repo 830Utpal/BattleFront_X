@@ -470,6 +470,53 @@ header{
     }
 }
 
+@media screen and (max-width:650px){
+    header{
+        padding: 0 10px;
+    }
+    .head-left button{
+        display: none;
+    }
+    .head-right a{
+        font-size:12px;
+        padding: 0 5px;
+    }
+    .hero-info{
+        left:5%;
+    }
+    .hero-section h1{
+        font-size:90px;
+    }
+    .next-btn{
+        left:25%;
+        top:40%;
+    }
+    .about-section{
+        margin:0;
+    }
+    .about-section h1{
+        font-size: 50px;
+    }
+    .image-box{
+        width:300px;
+        height:500px;
+    }
+    .about-sectionh4, .about-section h{
+        max-width: 350px;
+        text-align:center;
+    }
+    .contact-section .img1{
+        width:150px;
+        height:200px;
+        right:0;
+        top:20px;
+    }
+    .contact-section ,img2{
+        top:30px;
+        left:-40px;
+    }
+}
+
 
 
 
