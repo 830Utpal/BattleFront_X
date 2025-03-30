@@ -40,4 +40,83 @@ header{
 }
 .head-left button{
     border:none;
+    padding:10px 30px;
+    border-radius:20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.head-left button:hover{
+    opacity: 0.7;
+}
+.head-right{
+    display: flex;
+}
+
+.head-right a{
+    text-decoration: none;
+    padding-left:25px;
+    color:white;
+    font-size:15px;
+}
+
+.hero-section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+
+.hero-vid{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.hero-info{
+    z-index:1;
+    position: absolute;
+    top: 80px;
+    left:50px;
+}
+
+.hero-info h1{
+    font-size:120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-info p{
+    color:white;
+    max-width: 210px;
+}
+
+.hero-info button{
+    background-color: #edff66;
+    border: 2px solid #edff66;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color:black;
+    transition: 0.3s;
+}
+
+.hero-info button:hover{
+     background-color: transparent;
+     color: white;
+     box-shadow:0 0 15px #edff66;
+}
+
+.gaming-text{
+    font-size:120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    right:20px;
+    bottom:30px;
+}
+
