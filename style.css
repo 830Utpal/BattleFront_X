@@ -231,6 +231,26 @@ header{
     line-height: 25px;
 }
 
+.info-cards{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    height:100%;
+    margin-top:30px;
+}
+
+.card{
+    position: relative;
+    width:auto;
+    height:40vh;
+    overflow:hidden;
+    border:1px solid gray;
+    border-radius: 20px;
+    transition:0.5s;
+}
+
+
+
 
 
 
