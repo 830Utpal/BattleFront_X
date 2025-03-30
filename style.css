@@ -424,6 +424,84 @@ header{
     animation-timeline: view();
 }
 
+.battlefront-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #edff66;
+    text-shadow: 0 0 10px rgba(237, 255, 102, 0.8), 
+                 0 0 20px rgba(237, 255, 102, 0.6);
+    animation: glow 1.5s infinite alternate ease-in-out;
+}
+
+.head-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-right p a {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.head-right p a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background: #edff66;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.head-right p a:hover {
+    color: #edff66;
+}
+
+.head-right p a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .head-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .head-right p a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(237, 255, 102, 0.8), 
+                     0 0 20px rgba(237, 255, 102, 0.6);
+    }
+    to {
+        text-shadow: 0 0 15px rgba(237, 255, 102, 1), 
+                     0 0 30px rgba(237, 255, 102, 0.8);
+    }
+}
+
+
 @keyframes autoBlurAnimation{
     0%{
         filter:blur(40px);
@@ -460,24 +538,22 @@ header{
     }
 }
 
-/*auto dispplay*/
-.autoDisplay {
-    animation: autoDisplayAnimation ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 5%;
-    animation-composition: accumulate;
+/*auto display*/
+.autoDisplay{
+    animation:autoDisplayAnimation both;
+    animation-timeline:view(70% 5%);
 }
 
-@keyframes autoDisplayAnimation {
-    from {
-        opacity: 0;
+@keyframes autoDisplayAnimation{
+    from{
+        opacity:0;
         transform: translateY(200px) scale(0.3);
-    }
-    to {
+    }to{
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-}
+} 
+
 
 
 @media screen and (max-width:650px){
@@ -548,8 +624,4 @@ header{
         width:400px;
     }
 }
-
-
-
-
 
